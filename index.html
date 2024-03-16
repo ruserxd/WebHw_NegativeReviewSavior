@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>OPGG_Waiting_Page</title> <!--opgg的等待頁面 -->
+    <!--opgg的等待頁面 -->
+    <title>OPGG_Waiting_Page</title>
     <!-- 網站是專為英雄聯盟玩家而設計的 -->
     <meta name="keywords" content="專用於英雄聯盟玩家的網站">
     <!-- 提供有關英雄聯盟各個角色版本的 meta  -->
@@ -11,58 +12,15 @@
     <!-- 設定了址欄的主題顏色為亮綠色 -->
     <meta name="theme-color" content="#09ea49">
 
-    <!--NoteSane-->
+    <!--NoteSane 的字型-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--減少螢幕接觸延遲-->
+    <meta name="viewport" content="width=device-width">
+    <!--引入 CSS 的檔案進index.html-->
+    <link href="style.css" rel ="stylesheet" media="all">
 
-    <meta name="viewport" content="width=device-width"> <!--減少螢幕接觸延遲-->
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-size: 60px;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;                  /*设置最小高度为窗口高度 */
-            position: relative;                 /* 设置相對定位，以便定位文本 */
-        }
-        .bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            z-index: -999;
-            overflow: hidden;                   /* 將多餘的部分隱藏 */
-        }
-        .bg img {
-            width: auto;
-            height: auto;
-            min-width: 100%;                    /* 圖片最小寬度為屏幕寬度 */
-            min-height: 100%;                   /* 圖片最小高度為屏幕高度 */
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);   /* 圖片居中 */
-        }
-
-        .text {
-            position: absolute;
-            top: 40%;
-            left: 0;
-            transform: translateY(-50%);
-            text-align: center;
-            color: #09ea49;
-            padding: 10px 20px;
-            z-index: 1;
-            font-size: 4.0vw;                    /* 設置初始字體大小  vw依據視窗大小進行調整字體*/
-        }
-    </style>
 </head>
 <body>
     <div class = "container">
