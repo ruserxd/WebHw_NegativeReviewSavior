@@ -43,3 +43,24 @@ body, html {
     z-index: 1;
     font-size: 4.0vw;                    /* 設置初始字體大小  vw依據視窗大小進行調整字體*/
 }
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    height: 100px; /* 设置合适的高度 */
+}
+a {
+    font-size: 3vw;
+    color: #09ea49;
+}
+a:after {
+    content: '';
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    background-image: url("imgs/search-alt.png"),linear-gradient(#09ea49,#09ea49);
+    background-size: cover;
+}
